@@ -33,15 +33,9 @@
 	trainData.ref().push(newTrain);
 
 
-	//console.log(newTrain.name);
-	//console.log(newTrain.destination);
-	//console.log(newTrain.startTime);
-	//console.log(newTrain.frequency);
+	alert('New Train Added!');
 
-	alert('Train Added!!!');
-
-	//clears all of the text-boxes
-
+	//clears all of the text-boxe
 	$('#trainName-input').val("");
 	$('#destination-input').val("");
 	$('#startTime-input').val("");
@@ -58,7 +52,6 @@
 			let frequency = childSnapshot.val().frequency; 
 			let startTime = childSnapshot.val().startTime; 
 			console.log(startTime);
-
 		
 			// First Train Start time (pushed back 1 year to make sure it comes before current time)
 			let startTimeConverted = moment(startTime, "HH:mm").subtract(1, "years");
@@ -76,14 +69,8 @@
         	//let nextArrival = moment().add(minAway, "minutes").format("HH:mm");
         	let nextArrival = moment().add(minAway, "minutes").format('hh:mm A');
 
-			//console.log('Start Time: ', startTime);
-			//console.log('Remainder: ', tRemainder);
-			//console.log('Minutes: ', minAway);
-
 			$('#schedule').append(`<tr><td>${trainName}</td><td>${destination}</td><td>${frequency}</td><td>${nextArrival}</td><td>${minAway}</td>`)
 		})
-
-
 
 // Clock showing on the right side of schedule 
 	function currentTime() {
