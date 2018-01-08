@@ -14,19 +14,18 @@
 	<div class ="container">
 		<div class="row">
 			<div class="jumbotron header">
-				<h1 class="text-center">Train Scheduler</h1>
+				<h1 id="anyTime">Anytime is Train Time</h1>
+				<h3 id="anyTime">Choo Choo. Chee Chee.</h3>
 			</div>
 		</div>
 		<div class="row">
 			<div class="panel panel-primary">
-				  <div class="panel-heading col-md-12">
+				 <div class="panel-heading col-md-12">
 				  	<h4 class="col-md-6" id="trainSkedge">Current Train Schedule</h4>
-				  	<h4 class="col-md-6" id="clock"><span id = "currentTime"></span></h4>
-				  </div>
-				  
-				 	<div class="panel-body">
-				  		<table class="table table-striped">
-				  			<thead>
+				 </div>
+				 <div class="panel-body">
+				  	<table class="table table-striped">
+				  		<thead>
 				  			<tr>
 				  				<th>Train Name</th>
 				  				<th>Destination</th>
@@ -34,30 +33,29 @@
 				  				<th>Next Arrival</th>
 				  				<th>Minutes Away</th>
 				  			</tr>
-				  			</thead>
-				  			<tbody id = "schedule">
-				  		</tbody>
+				  		</thead>
+				  		<tbody id="schedule"></tbody>
 				  	</table>			
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="newTrainInput col-md-6">
+			<div class="newTrainInput col-md-12">
 				<div class="panel panel-primary">
 					  <div class="panel-heading">
-					  	<h4 id = addTitle>Add Train</h4>
-					  	<h4 id = "add"><i id = "symbol" class = "fa fa-plus fa-lg"></i></h4>
+					  	<h4 id="addTitle">Add Train</h4>
+					  	<h4 id="add"><i id="symbol" class="fa fa-plus fa-lg"></i></h4>
 					  	</div>
-					  <div class="panel-body" id="newTrainSchedule" data-status = "hide" > 	
+					  <div class="panel-body" id="newTrainSchedule">
 						<div role="form" class="form-group">
 							<label for="Search">Train Name:</label>
 							<input type="text" class="form-control" id="trainName-input" placeholder="" required>
 							<label for="Destination">Destination:</label>
 							<input type="text" class="form-control" id="destination-input">
-							<label for="Start Time">First Train Time: <span id= timeFormat>(HH:mm - military time)</span></label>
-							<input type="text" class="form-control" id="startTime-input" >
+							<label for="Start Time">First Train Time: (HH:mm - military time)</label>
+							<input type="text" class="form-control" id="startTime-input">
 							<label for="Frequency">Frequency (min)</label>
-							<input type="number" class="form-control" id="frequency-input">		
+							<input type="number" class="form-control" id="frequency-input">	
 							<button class="btn btn-primary" id="addTrain-btn"></i>Submit</button>
 						</div>
 					</div>
