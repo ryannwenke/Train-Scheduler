@@ -1,0 +1,60 @@
+body {
+	margin: 20px 0px 20px 0px;
+}
+
+.header {
+	background-color: brown;
+}
+
+.header h1 {
+	font-size: 5vw;
+	line-height: 0px;
+	margin:0px;
+	padding-bottom:0px;
+}
+
+#trainSkedge {
+	float:left;
+	padding: 0px;
+}
+
+#clock {
+	text-align: right;
+}
+
+#add {
+	text-align: right;
+	padding: 0px;
+}
+
+#addTitle {
+	float: left;
+	padding: 0px;
+}
+
+label {
+	margin-top: 20px;
+}
+
+button {
+	margin-top: 20px;
+}
+
+div#newTrainSchedule.panel-body{
+	height: 0px;
+	max-height: 400px;
+	visibility: hidden;
+	padding: 0px 15px 0px 15px;
+}
+
+.newTrainInput {
+	padding:0px;
+}
+
+#newTrain {
+	text-align: right;
+}
+
+#timeFormat {
+	font-size: 12px;
+}
